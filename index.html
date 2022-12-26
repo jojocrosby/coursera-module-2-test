@@ -17,11 +17,15 @@ h1 {
   
 p {
   margin: 1% 0.5% 1% 0.5%;
-  font-weight: bold;
   font-family: Helvetica;
   color: black;
 }
-    
+
+#question {
+   font-weight: bold;
+}
+
+
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
@@ -123,19 +127,14 @@ p {
   }
  }
  
-/********** style tags  **********/
-
-.question {
-   color: pink;
-}
-  
+ 
 </style>
 </head>
 <body>
 <h1>Our menu</h1>
 
 <div class="row">
-  <div class="col-lg-4 col-md-6 col-sd-1"><p class="question">Item 1</p></div>
+  <div class="col-lg-4 col-md-6 col-sd-1"><p id="question">Item 1</p></div>
   <div class="col-lg-4 col-md-6 col-sd-1"><p>Item 2</p></div>
   <div class="col-lg-4 col-md-6 col-sd-1"><p>Item 3</p></div>
   

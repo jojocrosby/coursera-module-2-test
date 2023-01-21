@@ -54,6 +54,48 @@ p {
   padding: 10px
 }
 
+  /* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* END HOME PAGE */
+    
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -171,38 +213,22 @@ p {
  <div class="end">
    <div class="col-lg-9 col-md-6 col-sd-1"><p>That's the end of the jokes friends.</p></div></div>
    
-   <div class="row">
+   
+  <div id="home-tiles" class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <div id="menu-tile"><span>carrot jokes</span></div>
-      </div>
+        <span>menu</span></div>
+
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <div id="menu-tile"><span>pea jokes</span></div>
-     </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-        <div id="menu-tile"><span>onion jokes</span></div>
-     </div>
-  </div>
+        <span>specials</span></div>
 
-</head>
-<body>
-
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
-  </div>
-</div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+            <span>map</span>
+          </div>
 
     </div>
 
 </body>
+
+
+
 </html>
